@@ -16,9 +16,7 @@ const App =() => {
 
 return (
 <div>
-    <ThemeProvider>
     <Main isBlack={isBlack}/>
-    </ThemeProvider>
 </div>
 
 );
