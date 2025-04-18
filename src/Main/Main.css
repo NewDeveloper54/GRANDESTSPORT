@@ -16,7 +16,7 @@
   .logoAnimate {
     position: relative;
     top: 20px;
-    left: 10%;
+    left: 15%;
     transform: translateX(-50%) scale(1);
     transition: all 2s ease-in-out;
   }
