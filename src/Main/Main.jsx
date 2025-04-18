@@ -1,103 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Main.css";
-
-import { Link } from "react-router-dom";
-
-
-import icone from "../assets/iconee.png";
-
-
-
-import { useTheme } from "../ThemeContext";
-
-import rendezVousImg from "../assets/rdv.png";
-import contactImg from "../assets/contact-us.png";
-import foxy from "../assets/foxy.svg";
-import MCT from "../assets/logo-MCT.svg";
-import rechercheImg from "../assets/symbole-de-linterface-de-recherche.png";
-import info from "../assets/information.png";
-import partenaire from "../assets/traiter.png";
-import gerer from "../assets/gerer.png";
-import annuler from "../assets/annule.png";
-import video from "../assets/video.mov";
-import play from "../assets/joue.png";
+import OHS from "../assets/logo-site.png";
 
 const Main = () => {
-  const { isDarkMode } = useTheme();
+  const [animationDone, setAnimationDone] = useState(false);
+  const [sectionTwoShowed, setSectionTwoShowed] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSectionTwoShowed(true);
+    }, 4000); // 2 seconds delay for section two to show
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimationDone(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <div className={isDarkMode ? "mBlack" : "m"} id="main">
-      <section id="sectionOne" className="sectionOne">
-        <div className="title">
-          
-            <div className="imagesParagraphe">
-              <div className="imagesOnly">
-              <img
-                src={MCT}
-                alt="Logo Moncontroletechnique.fr"
-                width="350"
-                height="52"
-                className="mct"
-              />
-              <img
-                src={foxy}
-                alt="Foxy"
-                width="126"
-                height="100"
-                className="foxy"
-              />
-              </div>
-
-              <div className="pOnly">
-              <p className="foxyPara">Sécurité et Environnement</p>
-              </div>
-
-            </div>
-        </div>
+    <div id="Main">
+      <section className="sectionOne">
+        <img
+          src={OHS}
+          alt="nothing yet"
+          className={animationDone ? "logoAnimate" : "logoHold"}
+        />
       </section>
 
-      <section id="sectionTwo" className="sectionTwo">
-        <h1>Toutes vos démarches en un clic :</h1>
-        <div className="cards">
-            <a
-              href="https://www.moncontroletechnique.fr/centre/controle-technique-maxeville"
-            >
-              <div className="items one">
-                <h2 className="rdv">Prendre   
-                  <span>rendez-vous</span></h2>
-                
-              </div>
-            </a>
+      <section className={`sectionTwo ${sectionTwoShowed ? "show" : ""}`}>
+        <div className="box">
+            <a href="http://ohs-solutions.fr/accueil/mes-services-ohs/">
+          <div className="item">
+            <h3>MES SERVICES OHS</h3>
+          </div>
+          </a>
 
-            <a
-              href="https://www.moncontroletechnique.fr/annulation_rdv"
-            >
-              <div className="items two">
-                <h2 className="infos">Modifer / Supprimer un RDV</h2>
-                
-              </div>
-              
-            </a>
+<a href="">
+          <div className="item">
+            <h3>CONTACT</h3>
+          </div>
+          </a>
 
-
-
-
-
-
-          <Link to="/video">
-  <div className="items three">
-    <img 
-    height="75" width="75"
-    className="play" src={play} alt="" />
-    
-    
-  </div>
-  </Link> 
-
-
-
-
-            
+<a href="">
+          <div className="item">
+            <h3>NOS DEPARTEMENTS</h3>
+          </div>
+          </a>
         </div>
       </section>
     </div>

@@ -1,456 +1,91 @@
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; 
-    background-color: #F2F2F2;
-    color: #4B3D3D;
-    font-family: 'Roboto',sans-serif;
-
-
-
-
-}
-p{
-    width: 300px;
-    font-weight: bold;
-    font-family: ro;
-    margin-top: -30px;
-}
-
-
-
-
-.title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+.sectionOne{
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-
-
-
-
-.sectionTwo{
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    background-color: #371F4B;  
-
-
-  overflow: hidden;
-}
-.sectionTwo>h1{
-    color: white;
 }
 
-.items{
-    height: 393px;
-    width: 403px;
-   
-    transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 70px;
-    box-shadow: rgba(10, 30, 10, 0.75) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
-
-
-
-
-}
-.items:hover{
-    
-
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: rgba(10, 30, 10, 0.75) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
-    transition: 0.5s;
-}
-.items:active{
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-
-
-
-
-
-.one {
-
-    border: solid 3px  white;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
-    
-    background: linear-gradient(145deg, #EB5A35, #EB5A35);
-    
-
-
-  }
-  
-  
-  
-
-
-
-
-
-
-/* HTML: <div class="loader"></div> */
-
-
-
-
-
-
-
-  
-
-
-.two{
-    border: solid 3px  white;
-
-    height: 343px;
-    width: 353px;
-    grid-area: two;
-    
-
-
-    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
-    background: linear-gradient(145deg, #EB5A35, #EB5A35);
-    box-shadow:  5px 5px 37px #371F4B,
-                 -5px -5px 37px #371F4B;
-
-
-}
-
-
-.three {
-    border: solid 3px  white;
-
+.logoHold {
     position: relative;
-    height: 343px;
-    width: 353px;
-    grid-area: three;
-  
-    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
-    overflow: hidden;
-    z-index: 0; /* important */
-  
-    box-shadow: 5px 5px 37px #371F4B,
-                -5px -5px 37px #371F4B;
-
-
-  }
-
-  .play{
-    filter: invert(1);
+    top: 200px;
+    left: 10%;
+    transform: translateX(-50%) scale(2.5);
   }
   
-  .three::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/image.png');
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px) brightness(0.5); /* flou + obscurcissement */
-    z-index: -1; /* met l'image derrière le contenu */
-  }
-
-
-
-
-
-
-.three>.littleCard{
+  .logoAnimate {
     position: relative;
-    top: -20px;
+    top: 20px;
+    left: 10%;
+    transform: translateX(-50%) scale(1);
+    transition: all 2s ease-in-out;
+  }
+ 
+  
+.sectionTwo {
+    opacity: 0; /* Cache la section au début */
+    visibility: hidden; /* Assure qu'elle ne prend pas de place */
+    transition: opacity 1s ease-in-out, visibility 0s 1s; /* La section devient visible après 1 seconde */
 }
 
-
-.items>h2{
-    font-size: 30px;
-}
-.one>h2{
-    font-size: 50px;
-display: flex;
-       flex-direction: column;
-    
+.sectionTwo.show {
+    opacity: 1; /* La section devient visible */
+    visibility: visible; /* La rend visible après l'animation */
+    transition: opacity 1s ease-in-out, visibility 0s; /* La visibilité est changée immédiatement quand l'opacity change */
 }
 
-
-
-
-
-.items>p{
-    font-family: 'Roboto',sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-
-
-.items:hover{
-    cursor: pointer;
-}
-
-p,h2{
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    color: #371F4B;
-}
-.one>h2{
-    color: white;
-
-}
-h1{
-    font-size: 35px;
-}
-
-.rdv{
-    color: #371F4B;
-}
-.infos, .contact{
-    color: white;
-}
-
-
-
-.littleCard{
-    width: 90%;
-    height: 60%;
-    position: relative;
-    top: -30px;
-    border-radius: 25px;
+#Main{
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.box{
+    height: 400px;
+    background-color: #D4E6DD;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-
-
-.hidden{
-    overflow: hidden;
+h3{
+    font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 a{
-    color: black;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-a:hover {
-    color: #702B2B; /* Texte violet sur hover des liens */
 }
 
-.imagesParagraphe{
-    display: flex ;
-    flex-direction: column;
-    margin-bottom: 20px;
-    
-}
-.imagesOnly{
-    display: flex;
-}
-.pOnly{
+.item {
+    color: #809197;
     position: relative;
-    left: 442px;
-    width: 20px;
-}
-.pOnly>p{
-    font-size: 20px;
-    color: #371F4B;
-}
-
-
-.mct{
-    width: 100%;
-}
-
-.foxyPara{
-    grid-area:foxyPara;
-    font-size: small;
-    font-weight: bold;
+    height: 120px;
+    width: 250px;
+    background-color: white;
     display: flex;
-    justify-content: flex-end;
-}
-
-.loop{
-    display: none;
-}
-.text{
-    display: inline;
-}
-
-
-
-
-@media (max-width: 650px) {
-    
-    h1{
-        text-align: center;
-    }
-}
-
-
-
-@media (max-width: 580px) {
-    
-.items{
-    height: 343px;
-    width: 393px;
-}
-.two,.three{
-    height: 293px;
-    width: 343px;
-}
-
-}
-
-@media (max-width: 480px) {
-    
-    .items{
-        height: 293px;
-        width: 343px;
-    }
-    .two,.three{
-        height: 243px;
-        width: 293px;
-    }
-    
-    }
-
-
-
-
-.one{
-    animation: showw 1.5s infinite;
-}
-@keyframes showw {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-
-
-@media (max-width: 980px) {
-    .imagesOnly{
-        display: flex;
-        flex-direction: column;
-    }
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: 30vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    
-}
-
-
-
-@media (max-width: 550px) {
-    .imagesOnly{
-        display: flex;
-        flex-direction: column;
-    }
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: -5vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    .mct{
-        width: 480px;
-    }
-    
-}
-
-
-@media (max-width: 800px) {
-    
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: -3.5vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    .mct{
-        width: 680px;
-    }
-    
-}
-
-
-
-@media (max-width: 710px) {
-    
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: -4vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    .mct{
-        width: 580px;
-    }
-    
-}
-
-
-@media (max-width: 610px) {
-    
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: -4vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    .mct{
-        width: 480px;
-    }
-    
-}
-@media (max-width: 510px) {
-    
-    .pOnly{
-        position: relative;
-        width: 20px;
-        left: -6.5vw;
-        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
-      
-    }
-    .mct{
-        width: 380px;
-    }
-    
-}
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 13px 5px rgba(0, 0, 0, 0.3));
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Reflet miroir inversé */
+  .item::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(-1);
+    opacity: 0.1;
+    filter: blur(2px);
+    pointer-events: none;
+    color: #809197;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  }
+  
