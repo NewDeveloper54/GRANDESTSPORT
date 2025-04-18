@@ -8,10 +8,11 @@
 
 .logoHold {
     position: relative;
-    top: 500px;
+    top: 600px;
     left: 15%;
-    transform: translateX(-50%) scale(3.5);
+    transform: translateX(-50%) scale(3);
   }
+ 
   
   .logoAnimate {
     position: relative;
@@ -52,9 +53,22 @@
 }
 
 
-h2{
+h1{
     font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    filter: drop-shadow(8px 8px 4px #809197);
+
 }
+
+  
+
+
+
+
+
+
+
+
 a{
     text-decoration: none;
 }
@@ -91,5 +105,52 @@ a{
     justify-content: center;
     align-items: center;
     font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+  h1::before,
+  h1::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background:  #809197;
+    width: 0%;
+    animation: underlineSlide 2s ease-in-out infinite;
+  }
+  
+  h1::before {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+  }
+  
+  h1::after {
+    bottom: 0;
+    right: 0;
+    animation-delay: 1s;
+  }
+  
+  @keyframes underlineSlide {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
   }
   
