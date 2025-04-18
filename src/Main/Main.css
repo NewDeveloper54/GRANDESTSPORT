@@ -8,9 +8,9 @@
 
 .logoHold {
     position: relative;
-    top: 200px;
+    top: 500px;
     left: 15%;
-    transform: translateX(-50%) scale(2.5);
+    transform: translateX(-50%) scale(3.5);
   }
   
   .logoAnimate {
@@ -45,14 +45,14 @@
 }
 
 #Main{
-    height: 700px;
+    height: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 
-h3{
+h2{
     font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 a{
@@ -62,8 +62,8 @@ a{
 .item {
     color: #809197;
     position: relative;
-    height: 120px;
-    width: 250px;
+    height: 220px;
+    width: 400px;
     background-color: white;
     display: flex;
     justify-content: center;

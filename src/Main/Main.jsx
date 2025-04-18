@@ -34,19 +34,19 @@ const Main = () => {
       <section className={`sectionTwo ${sectionTwoShowed ? "show" : ""}`}>
           <a href="http://ohs-solutions.fr/accueil/mes-services-ohs/">
             <div className="item">
-              <h3>MES SERVICES OHS</h3>
+              <h2>MES SERVICES OHS</h2>
             </div>
           </a>
 
           <a href="">
             <div className="item">
-              <h3>CONTACT</h3>
+              <h2>CONTACT</h2>
             </div>
           </a>
 
           <a href="">
             <div className="item">
-              <h3>NOS DEPARTEMENTS</h3>
+              <h2>NOS DEPARTEMENTS</h2>
             </div>
           </a>
       </section>
