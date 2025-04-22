@@ -1,9 +1,39 @@
 
 .sectionOne{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item>img{
+  animation: move 2s ease-in-out infinite;
+}
+@keyframes move  {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+  
+.byMp44{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: -45px;
+  opacity: 0; /* Cache la section au début */
+    visibility: hidden; /* Assure qu'elle ne prend pas de place */
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
+}
+.byMp44.show{
+  opacity: 1; /* La section devient visible */
+    visibility: visible; /* La rend visible après l'animation */
+    transition: opacity 1s ease-in-out, visibility 0s;
 }
 
 .logoHold {
@@ -22,21 +52,17 @@
     transition: all 2s ease-in-out;
   }
  
-  
-.sectionTwo {
-    opacity: 0; /* Cache la section au début */
-    visibility: hidden; /* Assure qu'elle ne prend pas de place */
-    transition: opacity 1s ease-in-out, visibility 0s 1s; /* La section devient visible après 1 seconde */
-}
+
 
 .sectionTwo{
     height: 100%;
-    background-color: #D4E6DD;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
+    opacity: 0; /* Cache la section au début */
+    visibility: hidden; /* Assure qu'elle ne prend pas de place */
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
 }
 
 .sectionTwo.show {
@@ -45,7 +71,47 @@
     transition: opacity 1s ease-in-out, visibility 0s; /* La visibilité est changée immédiatement quand l'opacity change */
 }
 
+
+.elements{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+    grid-gap: 80px;
+}
+.one{
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+}
+.four{
+  grid-area: four;
+}
+.five{
+  grid-area: five;
+}
+.six{
+  grid-area: six;
+}
+.seven{
+  grid-area: seven;
+}
+.eight{
+  grid-area: eight;
+}
+.nine{
+  grid-area: nine;
+}
+
 #Main{
+  background: linear-gradient(180deg, #2B61F3, #5680F1);
     height: 1920px;
     display: flex;
     flex-direction: column;
@@ -57,6 +123,7 @@ h1{
     font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     filter: drop-shadow(0px 0px 0px #809197);
+    text-align: center;
 }
   
 
@@ -73,18 +140,63 @@ a{
 
 .item {
     border-radius: 15px;
-    color: #809197;
-    position: relative;
-    height: 220px;
-    width: 400px;
+    color: white;
+    height: 300px;
+    width: 300px;
     background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0 13px 5px rgba(0, 0, 0, 0.3));
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease;
     overflow: hidden;
+
+    padding-bottom: 50px;
+  }
+  .seven>img{
+    position: relative;
+    top: 50px;
+  }
+  .eight>img{
+    position: relative;
+    top: 15px;
+  }
+  .one>img{
+    position: relative;
+    top: 10px;
+  }
+  .four>img,.five>img,.six>img{
+    position: relative;
+    top: 10px;
+  }
+  .four>h1,.five>h1,.six>h1{
+    position: relative;
+    top: 20px;
+  }
+  .one>h1,.two>h1,.three>h1{
+    position: relative;
+    top: 20px;
+  }
+  .one>img,.two>img{
+    position: relative;
+    top: 30px;
+  }
+  .three>img{
+    position: relative;
+    top: 45px;
+  }
+
+  .item::before{
+    content: "";
+    width: 150%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #9AAFE8;
+    position: absolute;
+    top: 150px;
+    z-index: -2;
   }
   
   /* Reflet miroir inversé */
@@ -105,6 +217,26 @@ a{
     align-items: center;
     font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   }
+
+  button {
+    background-color: #9AAFE8;
+    color: #ffffff;
+    height: 65px;
+    width: 250px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+  }
+  p{
+    color: white;
+    font-weight: bold;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+  }
   
 
 
@@ -119,37 +251,5 @@ a{
 
  
   
-  h1::before,
-  h1::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background:  #809197;
-    width: 0%;
-    animation: underlineSlide 2s ease-in-out infinite;
-  }
   
-  h1::before {
-    top: 0;
-    left: 0;
-    animation-delay: 0s;
-  }
-  
-  h1::after {
-    bottom: 0;
-    right: 0;
-    animation-delay: 1s;
-  }
-  
-  @keyframes underlineSlide {
-    0% {
-      width: 0%;
-    }
-    50% {
-      width: 100%;
-    }
-    100% {
-      width: 0%;
-    }
-  }
   
