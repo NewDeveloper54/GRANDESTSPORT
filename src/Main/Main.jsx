@@ -74,8 +74,8 @@ const Main = () => {
         <a href="https://www.notaires.fr/fr/donation">
           <div className="item one">
             <img src={donation}
-            height="140"
-            width="150"
+            height="120"
+            width="130"
             alt="" />
             <h1>DONATION</h1>
           </div>
@@ -87,8 +87,8 @@ const Main = () => {
         >
           <div className="item two">
             <img src={successionNotaire} alt="" 
-            height="150"
-            width="200"
+            height="130"
+            width="180"
             />
             <h1 className="angled-shadow">SUCCESSION</h1>
           </div>
@@ -97,8 +97,8 @@ const Main = () => {
         <a href="https://www.notaires.fr/fr/immobilier">
           <div className="item three">
             <img src={immobilierNotaire} alt="" 
-            height="150"
-            width="180"
+            height="130"
+            width="160"
             />
             <h1>IMMOBILIER</h1>
           </div>
@@ -110,8 +110,8 @@ const Main = () => {
         >
           <div className="item four">
             <img src={entreprise} alt="" 
-            height="150"
-            width="120"
+            height="130"
+            width="100"
             />
             <h1 className="angled-shadow">ENTREPRISE</h1>
           </div>
@@ -123,8 +123,8 @@ const Main = () => {
         >
           <div className="item five">
             <img src={familleNotaire} alt="" 
-            height ="150"
-            width="150"
+            height ="130"
+            width="130"
             />
             <h1 className="angled-shadow">Famille</h1>
           </div>
@@ -137,8 +137,8 @@ const Main = () => {
         >
           <div className="item six">
             <img src={formation} alt="" 
-            height="150"
-            width="150"
+            height="130"
+            width="130"
             />
             <h1 className="angled-shadow">Formation et emploi</h1>
           </div>
@@ -151,8 +151,8 @@ const Main = () => {
         >
           <div className="item seven">
             <img src={territoriale} alt="" 
-            height="220"
-            width="170"
+            height="200"
+            width="150"
             />
             <h1 className="angled-shadow">Collectivités territoriales</h1>
           </div>
@@ -164,8 +164,8 @@ const Main = () => {
         >
           <div className="item eight">
             <img src={notaire} 
-            height="200"
-            width="150"
+            height="180"
+            width="130"
             alt="" />
             <h1 className="angled-shadow">rôle du notaire</h1>
           </div>
@@ -178,18 +178,19 @@ const Main = () => {
         >
           <div className="item nine">
             <img src={reglementationNotaire} alt="" 
-            height ="190"
-            width="190"
+            height ="170"
+            width="170"
             />
             <h1 className="angled-shadow">Réglementation</h1>
           </div>
         </a>
 
         </div>
-
+<a href="https://www.notaires.fr/fr/directory/offices">
         <div className="button">
           <button>Trouver mon bien</button>
         </div>
+        </a>
 
       </section>
     </div>
