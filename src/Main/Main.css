@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 20px;
 }
 .item>img{
   animation: move 2s ease-in-out infinite;
@@ -80,7 +82,7 @@
     "one two three"
     "four five six"
     "seven eight nine";
-    grid-gap: 80px;
+    grid-gap: 60px;
 }
 .one{
   grid-area: one;
