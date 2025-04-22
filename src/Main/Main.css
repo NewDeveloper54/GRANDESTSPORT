@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 30px;
+  left: 40px;
 }
 .item>img{
   animation: move 2s ease-in-out infinite;
