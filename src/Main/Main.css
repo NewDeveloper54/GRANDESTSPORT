@@ -113,7 +113,7 @@
 }
 
 #Main{
-  background: linear-gradient(180deg, #2B61F3, #5680F1);
+  background: linear-gradient(180deg, #2B61F3, #6485dd);
     height: 1920px;
     display: flex;
     flex-direction: column;

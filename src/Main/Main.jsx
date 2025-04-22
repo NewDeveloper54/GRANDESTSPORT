@@ -188,7 +188,7 @@ const Main = () => {
         </div>
 <a href="https://www.notaires.fr/fr/directory/offices">
         <div className="button">
-          <button>Trouver mon bien</button>
+          <button>Trouver un notaire</button>
         </div>
         </a>
 
