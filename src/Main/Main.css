@@ -222,6 +222,7 @@ a{
   }
 
   button {
+    font-weight: bold;
     background-color: transparent;
     color: #ffffff;
     height: 65px;
@@ -262,6 +263,9 @@ a{
       left: 0;
     }
   }
+
+  
+  
   
 
 
