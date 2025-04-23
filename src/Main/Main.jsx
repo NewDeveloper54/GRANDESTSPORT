@@ -186,9 +186,9 @@ const Main = () => {
         </a>
 
         </div>
-<a href="https://www.notaires.fr/fr/directory/offices">
+<a href="https://immobiliere-des-etudes.fr/marketplace">
         <div className="button">
-          <button>Trouver un office</button>
+          <button>Trouver mon bien</button>
         </div>
         </a>
 
