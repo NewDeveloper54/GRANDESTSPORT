@@ -279,7 +279,7 @@ a{
   
 
 
-  @media (max-width : 1010px) and (min-width: 650px) {
+  @media (max-width : 1005px) and (min-width: 650px) {
     .elements{
       display: grid;
       grid-template-rows: repeat(5, 1fr);
