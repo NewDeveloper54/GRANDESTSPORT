@@ -70,7 +70,7 @@ const Main = () => {
 
       <section className={`sectionTwo ${sectionTwoShowed ? "show" : ""}`}>
         <div className="elements">
-          <a href="https://www.notaires.fr/fr/donation">
+          <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf">
             <div className="item one">
               <img src={donation} height="120" width="130" alt="" />
               <h1>PLAN D'ACCES</h1>
@@ -87,7 +87,7 @@ const Main = () => {
             </div>
           </a>
 
-          <a href="https://www.notaires.fr/fr/immobilier">
+          <a href="https://www.grandest.fr/decouvrir-richesses/offre-sportive/">
             <div className="item three">
               <img src={immobilierNotaire} alt="" height="130" width="160" />
               <h1>OFFRE SPORTIVE</h1>
@@ -95,7 +95,7 @@ const Main = () => {
           </a>
 
           <a
-            href="https://www.notaires.fr/fr/entreprise"
+            href="https://www.grandest.fr/fonctionnement-de-la-region/les-maisons-de-la-region/#flex_image__video"
             rel="noopener noreferrer"
           >
             <div className="item four">

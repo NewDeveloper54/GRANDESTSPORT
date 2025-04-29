@@ -27,7 +27,8 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  left: -45px;
+  left: -460px;
+  bottom: 128px;
   opacity: 0; /* Cache la section au début */
     visibility: hidden; /* Assure qu'elle ne prend pas de place */
     transition: opacity 1s ease-in-out, visibility 0s 1s;
@@ -144,7 +145,7 @@
 }
 
 #Main{
-  background-color: #2F63F1;
+  background-color: #2B347F;
     height: 1920px;
     display: flex;
     flex-direction: column;
@@ -173,7 +174,7 @@ a{
 
 .item {
     border-radius: 15px;
-    color: white;
+    color: #2A347D;
     height: 380px;
     width: 380px;
     background-color: white;
@@ -226,30 +227,13 @@ a{
     width: 150%;
     height: 70%;
     border-radius: 50%;
-    background-color: #9AAFE8;
+    background-color: #7FDDF0;
     position: absolute;
     top: 150px;
     z-index: -2;
   }
   
-  /* Reflet miroir inversé */
-  .item::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(-1);
-    opacity: 0.1;
-    filter: blur(2px);
-    pointer-events: none;
-    color: #809197;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-  }
+  
 
   button {
     font-weight: bold;
@@ -417,8 +401,8 @@ a{
     top: 60%;
     transform: translate(-50%, -50%);
     width: 700px;
-    height: 500px;
-    background-color: #2F63F1;
+    height: 150px;
+    background-color: #2B347F;
     border-radius: 20px;
     animation: disappear 4s ease-out forwards;
   }
@@ -428,7 +412,7 @@ a{
     top: 12%;
     width: 300px;
     height: 200px;
-    background-color: #2F63F1;
+    background-color: transparent;
     border-radius: 20px;
     z-index: 1;
   }
@@ -446,3 +430,5 @@ a{
     top: 3%;
     transition: 1s;
   }
+
+  
