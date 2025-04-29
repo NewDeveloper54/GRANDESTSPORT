@@ -58,7 +58,7 @@
 
   .logoAnimate {
     position: relative;
-    top: 1150px;
+    top: 850px;
     left: 15%;
     transform: translateX(-50%) scale(3);
     transition: all 2s ease-in-out;
@@ -398,7 +398,7 @@ a{
   .outerbox1{
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 250px;
