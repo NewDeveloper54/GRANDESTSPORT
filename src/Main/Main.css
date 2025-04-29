@@ -27,8 +27,8 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  left: -200px;
-  bottom: 110px;
+  left: -170px;
+  bottom: 100px;
   opacity: 0; /* Cache la section au début */
     visibility: hidden; /* Assure qu'elle ne prend pas de place */
     transition: opacity 1s ease-in-out, visibility 0s 1s;
@@ -61,7 +61,7 @@
     top: 850px;
     left: 15%;
     transform: translateX(-50%) scale(3);
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
     animation: disappear 1s ease-out forwards;
   } 
 
