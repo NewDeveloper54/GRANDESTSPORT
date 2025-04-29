@@ -418,7 +418,7 @@ a{
     transform: translate(-50%, -50%);
     width: 700px;
     height: 500px;
-    background-color: white;
+    background-color: #2F63F1;
     border-radius: 20px;
     animation: disappear 4s ease-out forwards;
   }
@@ -428,7 +428,7 @@ a{
     top: 7%;
     width: 300px;
     height: 200px;
-    background-color: white;
+    background-color: #2F63F1;
     border-radius: 20px;
     z-index: 1;
   }
