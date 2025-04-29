@@ -27,8 +27,8 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  left: -460px;
-  bottom: 128px;
+  left: -350px;
+  bottom: 120px;
   opacity: 0; /* Cache la section au début */
     visibility: hidden; /* Assure qu'elle ne prend pas de place */
     transition: opacity 1s ease-in-out, visibility 0s 1s;
@@ -61,7 +61,7 @@
     top: 850px;
     left: 15%;
     transform: translateX(-50%) scale(3);
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
     animation: disappear 1s ease-out forwards;
   } 
 
@@ -412,7 +412,7 @@ a{
     top: 12%;
     width: 300px;
     height: 200px;
-    background-color: transparent;
+    background-color: #2B347F;
     border-radius: 20px;
     z-index: 1;
   }
