@@ -414,21 +414,21 @@ a{
   .outerbox1{
     position: absolute;
     left: 50%;
-    top: 160%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 500px;
-    background-color: #2F63F1;
+    background-color: white;
     border-radius: 20px;
     animation: disappear 4s ease-out forwards;
   }
   .outerbox2{
     position: absolute;
     left: 0%;
-    top: 25%;
+    top: 10%;
     width: 300px;
     height: 200px;
-    background-color: #2F63F1;
+    background-color: white;
     border-radius: 20px;
     z-index: 1;
   }
