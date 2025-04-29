@@ -443,6 +443,6 @@ a{
   .goUp{
     position: absolute;
     left: -12%;
-    top: -2%;
+    top: 3%;
     transition: 1s;
   }
