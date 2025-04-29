@@ -398,10 +398,10 @@ a{
   .outerbox1{
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 45%;
     transform: translate(-50%, -50%);
     width: 700px;
-    height: 150px;
+    height: 250px;
     background-color: #2B347F;
     border-radius: 20px;
     animation: disappear 4s ease-out forwards;
