@@ -27,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  left: -250px;
+  left: -200px;
   bottom: 110px;
   opacity: 0; /* Cache la section au début */
     visibility: hidden; /* Assure qu'elle ne prend pas de place */
@@ -398,7 +398,7 @@ a{
   .outerbox1{
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 52%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 250px;
