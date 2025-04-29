@@ -425,7 +425,7 @@ a{
   .outerbox2{
     position: absolute;
     left: 5%;
-    top: 7%;
+    top: 12%;
     width: 300px;
     height: 200px;
     background-color: #2F63F1;
@@ -436,7 +436,7 @@ a{
   .img2{
     position: absolute;
     left: -12%;
-    top: 5%;
+    top: 10%;
     transform: scale(0.3);
   }
 
