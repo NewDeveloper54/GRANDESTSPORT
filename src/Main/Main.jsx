@@ -81,7 +81,7 @@ const Main = () => {
           
           <a href="https://www.grandest.fr/decouvrir-richesses/offre-sportive/">
             <div className="item one">
-              <img src={acces} height="150" width="160" alt="" />
+            { /* <img src={acces} height="150" width="160" alt="" />   */ }
               <h1>OFFRE SPORTIVE</h1>
             </div>
           </a>
