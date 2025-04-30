@@ -1,4 +1,6 @@
-
+:root{
+  --main-color:#2A347D;
+}
 .sectionOne{
   display: flex;
     flex-direction: column;
@@ -34,7 +36,7 @@
     transition: opacity 1s ease-in-out, visibility 0s 1s;
 }
 .byMp44.show{
-  opacity: 1; /* La section devient visible */
+  opacity: 0; /* La section devient visible */
     visibility: visible; /* La rend visible après l'animation */
     transition: opacity 1s ease-in-out, visibility 0s;
 }
@@ -108,13 +110,30 @@
 
 
 .elements{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.priority{
+  display: flex;
+  justify-content: center;
+}
+.secondary{
+  display: flex;
+  justify-content: space-evenly;
+}
+/*
+.elements{
+  border: solid 3px red;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "one two "
     "three four ";
-    grid-gap: 70px;
+    grid-gap: 100px;
 }
 .one{
   grid-area: one;
@@ -143,6 +162,8 @@
 .nine{
   grid-area: nine;
 }
+
+*/
 
 #Main{
   background-color: #2B347F;
@@ -174,10 +195,10 @@ a{
 
 .item {
     border-radius: 15px;
-    color: #2A347D;
+    color: white;
     height: 380px;
     width: 380px;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,8 +207,15 @@ a{
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease;
     overflow: hidden;
-
     padding-bottom: 50px;
+  }
+  .one{
+    height: 450px;
+    width: 450px;
+  }
+  .two,.three,.four{
+    height: 300px;
+    width: 300px;
   }
   .seven>img{
     position: relative;
@@ -221,8 +249,8 @@ a{
     position: relative;
     top: 45px;
   }
-
-  .item::before{
+/*
+  .item.two::before, .item.three::before, .item.four::before{
     content: "";
     width: 150%;
     height: 70%;
@@ -231,6 +259,31 @@ a{
     position: absolute;
     top: 150px;
     z-index: -2;
+  }  */
+  .item::before{
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    border-radius: 13px;
+    background-color: var(--main-color);
+    top: 3px;
+    z-index: -1;
+  }
+  
+  .item.one::after{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(#e81cff, #40c9ff);
+    z-index: -2;
+    animation: circularMove 6s linear infinite;
+  }
+  @keyframes circularMove {
+    0%   { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(250px) rotate(0deg); }
   }
   
   

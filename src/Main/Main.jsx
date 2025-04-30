@@ -69,13 +69,24 @@ const Main = () => {
       </section>
 
       <section className={`sectionTwo ${sectionTwoShowed ? "show" : ""}`}>
+
         <div className="elements">
+
+
+          <div className="priority">
+
+          
           <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf">
             <div className="item one">
               <img src={donation} height="120" width="130" alt="" />
               <h1>PLAN D'ACCES</h1>
             </div>
           </a>
+
+          </div>
+
+
+          <div className="secondary">
 
           <a
             href="https://www.notaires.fr/fr/succession"
@@ -103,6 +114,8 @@ const Main = () => {
               <h1 className="angled-shadow">MES MAISONS DELA REGION</h1>
             </div>
           </a>
+          </div>
+
         </div>
 
         <a href="https://immobiliere-des-etudes.fr/marketplace">
@@ -111,6 +124,9 @@ const Main = () => {
           </div>
         </a>
       </section>
+
+
+      
 
 
 
