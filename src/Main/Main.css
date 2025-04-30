@@ -226,12 +226,12 @@ a{
   }
   .four>img,.five>img,.six>img{
     position: relative;
-    top: 50px;
+    top:40px;
     filter: invert(1);
   }
   .four>h1,.five>h1,.six>h1{
     position: relative;
-    top: 42px;
+    top: 35px;
     font-size: 25px;
   }
   .one>h1{
@@ -276,7 +276,7 @@ a{
     width: 98%;
     height: 98.5%;
     border-radius: 78px;
-    background-color: var(--main-color);
+    background-color: #b7c3c5;
     top: 3px;
     z-index: -1;
   }

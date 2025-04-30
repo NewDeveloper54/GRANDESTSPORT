@@ -92,7 +92,7 @@ const Main = () => {
           <div className="secondary">
 
           <a
-            href="https://www.notaires.fr/fr/succession"
+            href="https://www.grandest.fr/contact/"
             rel="noopener noreferrer"
           >
             <div className="item two">
