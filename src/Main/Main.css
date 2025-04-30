@@ -284,9 +284,9 @@ a{
   .item.one::after{
     content: "";
     position: absolute;
-    width: 2000px;
-    height: 400px;
-    border-radius: 50%;
+    width: 1800px;
+    height: 300px;
+    border-radius: 0%;
     background: linear-gradient(#e81cff, #40c9ff);
     z-index: -2;
     animation: circularMove 6s linear infinite;
