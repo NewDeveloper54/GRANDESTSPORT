@@ -114,7 +114,7 @@
   height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .priority{
   display: flex;
@@ -375,7 +375,7 @@ a{
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         opacity: 0; /* Cache la section au début */
         visibility: hidden; /* Assure qu'elle ne prend pas de place */
