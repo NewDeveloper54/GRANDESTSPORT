@@ -18,7 +18,7 @@ const Main = () => {
  useEffect(()=>{
   const timer  =setTimeout(()=>{
     setImg2(true);
-  },2700);
+  },2600);
  }, []);
 
 
