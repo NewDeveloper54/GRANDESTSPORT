@@ -194,7 +194,7 @@ a{
 }
 
 .item {
-    border-radius: 15px;
+    border-radius: 80px;
     color: white;
     height: 380px;
     width: 380px;
@@ -216,15 +216,9 @@ a{
   .two,.three,.four{
     height: 300px;
     width: 300px;
+    border-radius: 53px;
   }
-  .seven>img{
-    position: relative;
-    top: 50px;
-  }
-  .eight>img{
-    position: relative;
-    top: 15px;
-  }
+
   .one>img{
     position: relative;
     top: 10px;
@@ -250,7 +244,7 @@ a{
     top: 45px;
   }
 /*
-  .item.two::before, .item.three::before, .item.four::before{
+  .item.two::before{
     content: "";
     width: 150%;
     height: 70%;
@@ -265,7 +259,7 @@ a{
     position: absolute;
     width: 98%;
     height: 98.5%;
-    border-radius: 13px;
+    border-radius: 78px;
     background-color: var(--main-color);
     top: 3px;
     z-index: -1;
