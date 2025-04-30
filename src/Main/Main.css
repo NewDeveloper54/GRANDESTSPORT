@@ -63,7 +63,7 @@
     top: 850px;
     left: 15%;
     transform: translateX(-50%) scale(3);
-    transition: all 1.2s ease-in-out;
+    transition: all 1s ease-in-out;
     animation: disappear 1s ease-out forwards;
   } 
 
