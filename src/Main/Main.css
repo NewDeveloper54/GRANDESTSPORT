@@ -222,26 +222,42 @@ a{
   .one>img{
     position: relative;
     top: 10px;
+    filter: invert(1);
   }
   .four>img,.five>img,.six>img{
     position: relative;
-    top: 10px;
+    top: 50px;
+    filter: invert(1);
   }
   .four>h1,.five>h1,.six>h1{
     position: relative;
-    top: 20px;
+    top: 42px;
+    font-size: 25px;
   }
-  .one>h1,.two>h1,.three>h1{
+  .one>h1{
     position: relative;
     top: 20px;
+  }
+  .two>h1{
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+  }
+  .three>h1{
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+
   }
   .one>img,.two>img{
     position: relative;
     top: 30px;
+    filter: invert(1);
   }
   .three>img{
     position: relative;
-    top: 45px;
+    top: 30px;
+    filter: invert(1);
   }
 /*
   .item.two::before{

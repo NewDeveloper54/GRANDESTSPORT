@@ -7,6 +7,9 @@ import immobilierNotaire from "../assets/immobilierNotaire.png";
 import successionNotaire from "../assets/successionNotaire.png";
 import entreprise from "../assets/entreprise.png";
 import GES from "../assets/GES.svg";
+import acces from "../assets/structure.png";
+import telephoner from "../assets/telephone.png";
+import domicile from "../assets/domicile.png";
 
 const Main = () => {
   const [animationDone, setAnimationDone] = useState(false);
@@ -78,7 +81,7 @@ const Main = () => {
           
           <a href="https://www.grandest.fr/decouvrir-richesses/offre-sportive/">
             <div className="item one">
-              <img src={donation} height="120" width="130" alt="" />
+              <img src={acces} height="150" width="160" alt="" />
               <h1>OFFRE SPORTIVE</h1>
             </div>
           </a>
@@ -93,14 +96,14 @@ const Main = () => {
             rel="noopener noreferrer"
           >
             <div className="item two">
-              <img src={successionNotaire} alt="" height="130" width="180" />
+              <img src={telephoner} alt="" height="100" width="100" />
               <h1 className="angled-shadow">CONTACT</h1>
             </div>
           </a>
 
           <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf">
             <div className="item three">
-              <img src={immobilierNotaire} alt="" height="130" width="160" />
+              <img src={acces} alt="" height="120" width="130" />
               <h1>PLAN D'ACCES </h1>
             </div>
           </a>
@@ -110,19 +113,21 @@ const Main = () => {
             rel="noopener noreferrer"
           >
             <div className="item four">
-              <img src={entreprise} alt="" height="130" width="100" />
-              <h1 className="angled-shadow">MES MAISONS DELA REGION</h1>
+              <img src={domicile} alt="" height="100" width="100" />
+              <h1 className="angled-shadow">MES MAISONS DE LA REGION</h1>
             </div>
           </a>
           </div>
 
         </div>
 
-        <a href="https://immobiliere-des-etudes.fr/marketplace">
+{/*
+
+        <a href="https://immobiliere-des-etudes.fr/marketplace"> 
           <div className="button">
             <button>Trouver mon bien</button>
           </div>
-        </a>
+        </a>  */ }
       </section>
 
 
