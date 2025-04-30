@@ -91,11 +91,12 @@
 
 
 .sectionTwo{
+  border: solid 5px orange;
   margin-top: -100px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     opacity: 0; /* Cache la section au début */
     visibility: hidden; /* Assure qu'elle ne prend pas de place */
