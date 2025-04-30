@@ -114,7 +114,7 @@
   height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .priority{
   display: flex;
@@ -264,7 +264,7 @@ a{
     content: "";
     position: absolute;
     width: 98%;
-    height: 98%;
+    height: 98.5%;
     border-radius: 13px;
     background-color: var(--main-color);
     top: 3px;
