@@ -325,7 +325,7 @@ a{
     }
     
     #Main{
-      background: linear-gradient(180deg, #2B61F3, #6485dd);
+      background-color: #2B347F;
         height: 2500px;
         display: flex;
         flex-direction: column;
