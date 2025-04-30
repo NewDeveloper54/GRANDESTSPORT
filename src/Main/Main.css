@@ -43,7 +43,7 @@
 
 .logoHold {
     position: relative;
-    top: 600px;
+    top: 630px;
     left: 15%;
     transform: translateX(-50%) scale(3);
   }
@@ -60,7 +60,7 @@
 
   .logoAnimate {
     position: relative;
-    top: 900px;
+    top: 850px;
     left: 15%;
     transform: translateX(-50%) scale(3);
     transition: all 1.2s ease-in-out;
