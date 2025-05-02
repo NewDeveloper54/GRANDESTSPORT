@@ -7,7 +7,7 @@ import immobilierNotaire from "../assets/immobilierNotaire.png";
 import successionNotaire from "../assets/successionNotaire.png";
 import entreprise from "../assets/entreprise.png";
 import GES from "../assets/GES.svg";
-import acces from "../assets/acces3.png";
+import acces from "../assets/acces2.png";
 import telephoner from "../assets/appel.png";
 import domicile from "../assets/house.png";
 
