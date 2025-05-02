@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import "./Main.css";
 import Notaire from "../assets/logoNotaire.png";
 import mp44 from "../assets/mp44.png";
@@ -16,6 +16,34 @@ const Main = () => {
   const [sectionTwoShowed, setSectionTwoShowed] = useState(false);
   const [NotaireShow, setNotaireShow] = useState(false);
   const [img2, setImg2] = useState(false);
+  const[show2,setShow2]=useState(false);
+  const [show3,setShow3]=useState(false);
+  const [show4,setShow4]=useState(false);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow2(true);
+    }, 5000); // 2 seconds delay for show2 to show
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow3(true);
+    }, 5200); // 2 seconds delay for show3 to show
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow4(true);
+    }, 5500); // 2 seconds delay for show4 to show
+
+    return () => clearTimeout(timer);
+  }, []);
 
 
  useEffect(()=>{
@@ -71,12 +99,12 @@ const Main = () => {
         </div>
       </section>
 
-      <section className={`sectionTwo ${sectionTwoShowed ? "show" : ""}`}>
+      <section className="sectionTwo">
 
         <div className="elements">
 
 
-          <div className="priority">
+          <div className={`priority ${sectionTwoShowed ? "show" : ""}`}>
 
           
           <a href="https://www.grandest.fr/decouvrir-richesses/offre-sportive/">
@@ -94,6 +122,7 @@ const Main = () => {
           <a
             href="https://www.grandest.fr/contact/"
             rel="noopener noreferrer"
+            className={`hidden ${show2 ? "show2" : ""}`}
           >
             <div className="item two">
               <img src={telephoner} alt="" height="100" width="100" />
@@ -101,7 +130,7 @@ const Main = () => {
             </div>
           </a>
 
-          <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf">
+          <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf"    className={`hidden ${show3 ? "show2" : ""}`}>
             <div className="item three">
               <img src={acces} alt="" height="140" width="150" />
               <h1>PLAN D'ACCES </h1>
@@ -111,6 +140,7 @@ const Main = () => {
           <a
             href="https://www.grandest.fr/fonctionnement-de-la-region/les-maisons-de-la-region/#flex_image__video"
             rel="noopener noreferrer"
+            className={`hidden ${show4 ? "show2" : ""}`}
           >
             <div className="item four">
               <img src={domicile} alt="" height="100" width="100" />

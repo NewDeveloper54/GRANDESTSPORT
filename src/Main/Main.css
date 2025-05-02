@@ -42,6 +42,70 @@
     transition: opacity 1s ease-in-out, visibility 0s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden{
+  opacity: 0; /* Cache la section au début */
+}
+
+
+
+
+
+
+.show2{
+  animation: show2 0.5s ease-in-out forwards;
+}
+.show3{
+  animation: shsow3 1s ease-in-out forwards;
+}
+.show4{
+  animation: shsow4 1s ease-in-out forwards;
+}
+@keyframes show2 {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes show3 {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes show4 {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logoHold {
     position: relative;
     top: 630px;
@@ -98,16 +162,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Cache la section au début */
-    visibility: hidden; /* Assure qu'elle ne prend pas de place */
-    transition: opacity 1s ease-in-out, visibility 0s 1s;
+    
 }
 
-.show {
-    opacity: 1; /* La section devient visible */
-    visibility: visible; /* La rend visible après l'animation */
-    transition: opacity 1s ease-in-out, visibility 0s; /* La visibilité est changée immédiatement quand l'opacity change */
-}
+
 
 
 .elements{
@@ -120,7 +178,18 @@
 .priority{
   display: flex;
   justify-content: center;
+  opacity: 0; /* Cache la section au début */
 }
+
+.show {
+  opacity: 1; /* La section devient visible */
+  visibility: visible; /* La rend visible après l'animation */
+  transition: opacity 1s ease-in-out, visibility 0s; /* La visibilité est changée immédiatement quand l'opacity change */
+}
+
+
+
+
 .secondary{
   display: flex;
   justify-content: space-evenly;
