@@ -215,6 +215,7 @@ a{
     width: 450px;
   }
   .two,.three,.four{
+    color: var(--main-color);
     height: 300px;
     width: 300px;
     border-radius: 53px;
@@ -296,7 +297,7 @@ a{
     width: 500px;
     height: 70%;
     border-radius: 50%;
-    background-color: var(--main-color2);
+    background-color: #b0dde6;
     top: 50%;
     z-index: -1;
   }

@@ -7,9 +7,9 @@ import immobilierNotaire from "../assets/immobilierNotaire.png";
 import successionNotaire from "../assets/successionNotaire.png";
 import entreprise from "../assets/entreprise.png";
 import GES from "../assets/GES.svg";
-import acces from "../assets/planAcces.png";
+import acces from "../assets/acces2.png";
 import telephoner from "../assets/appel.png";
-import domicile from "../assets/maison.png";
+import domicile from "../assets/house.png";
 
 const Main = () => {
   const [animationDone, setAnimationDone] = useState(false);
@@ -103,7 +103,7 @@ const Main = () => {
 
           <a href="https://www.grandest.fr/wp-content/uploads/2025/01/tomblaine.pdf">
             <div className="item three">
-              <img src={acces} alt="" height="120" width="130" />
+              <img src={acces} alt="" height="140" width="150" />
               <h1>PLAN D'ACCES </h1>
             </div>
           </a>
